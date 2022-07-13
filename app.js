@@ -72,8 +72,9 @@ app.post("/",(req,res)=>{
       item.save();
     res.redirect("/");
 });
-app.listen( process.env.PORT || 3000,(req,res) =>{
-   console.log("server is running in port 3000");
+const port = process.env.PORT || 3000;
+app.listen( port ,(req,res) =>{
+   console.log("server is running in port ");
 });
 
 
