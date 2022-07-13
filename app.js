@@ -72,7 +72,7 @@ app.post("/",(req,res)=>{
       item.save();
     res.redirect("/");
 });
-app.listen(3000 || process.env.PORT,(req,res) =>{
+app.listen( process.env.PORT || 3000,(req,res) =>{
    console.log("server is running in port 3000");
 });
 
