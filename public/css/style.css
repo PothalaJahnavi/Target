@@ -24,20 +24,22 @@ ul{
     margin-right: 0;
 }
 #order{
-    margin-top: 8%;
+    margin-top: 4%;
     margin-left: 33%;
     max-width: 400px;
     border: 2px solid black;
     border-radius: 7px;
     background-color:azure;
 }
+    
 button{
     background-color:cornflowerblue;
     padding: 8px 15px;
     border: none;
-    margin-left: 4%;
+    /* margin-left: 4%; */
     font-size: 25px;
     font-weight: 800;
+    border-radius: 60%;
 }
 li{
     align-items: center;
@@ -50,4 +52,5 @@ form.targets{
 input{
     margin-left:6%;
     padding: 15px;
+    width:270px;
 }
