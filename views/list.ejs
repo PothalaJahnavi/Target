@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">        
+        
+    </head>
+    <body>
+        <h1>Targets for <%=newDay %></h1>
+        <h3>set your targets and don't stop till you get there</h3>
+        <div id="order">
+            <ul>
+            <%newtarget.forEach(function(item){ %>
+                <form action="/delete" method="post">
+                    <span><li><%= item.name %></span><button type="submit" name="check" value="<%=item._id %>"><i class="fa-solid fa-trash fa-2x" id="icon"></i></button></li>
+                    <br>
+                </form>
+               
+           <%})%>
+        </ul>
+        <form action="/" method="post" class="targets">
+            <input type="text" name="newitem" placeholder="New Target">&nbsp;
+            <button type="submit" id="final">+</button>
+        </form>
+    </div>
+    
+    </body>
+</html>
